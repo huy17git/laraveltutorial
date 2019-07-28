@@ -37,6 +37,3 @@ Route::post('/group/add', 'GroupController@store')->name('storeGroup');
 Route::get('group/ajaxStudent', 'GroupController@ajax')->name('ajaxGetStudent');
 
 Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('change-language');
-
-
-
