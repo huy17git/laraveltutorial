@@ -3,6 +3,7 @@
 @section('title', 'Manage Students')
 
 @section('content')
+    {{ show_menu("a") }}
     <div class="container-fluid">
         <div class="row">
             <a href="{!! route('change-language',['en']) !!}">English</a>
