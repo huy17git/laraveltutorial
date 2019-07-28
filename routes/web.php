@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index')->middleware('locale');
+Route::get('/menu', 'HomeController@menu');
 Route::get('/getStudentSubjects', 'StudentController@getSubjects');
 
 Route::get('/student/add', 'StudentController@create')->name('addStudent');
