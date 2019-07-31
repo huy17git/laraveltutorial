@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\StudentRepositoryInterface;
 use Illuminate\Http\Request;
 use App\Student;
 use App\Group;
 use Illuminate\Support\Facades\Session;
-use App\Repositories\StudentRepository;
 
 class HomeController extends Controller
 {
     protected $studentRepository;
 
-    public function __construct(StudentRepository $studentRepository)
+    public function __construct(StudentRepositoryInterface $studentRepository)
     {
 
         $this->studentRepository = $studentRepository;
