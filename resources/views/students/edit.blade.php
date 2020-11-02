@@ -39,7 +39,7 @@
             <br>
             <br>
             <label>Subject</label>
-            {!! var_dump($subjects_id) !!}
+            
             <div class="row">
 
 
