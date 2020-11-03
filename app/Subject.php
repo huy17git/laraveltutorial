@@ -8,6 +8,6 @@ class Subject extends Model
 {
     //
     public function students() {
-        $this->belongsToMany('App\Student')->withTimestamps();
+        return $this->belongsToMany('App\Student')->withTimestamps();
     }
 }
